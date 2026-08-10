@@ -1,0 +1,10 @@
+{
+  "username": "John",
+  "empCode": "EMP101",
+  "userInfo": {
+    "age": 25,
+    "city": "Ahmedabad",
+    "department": "Development"
+  },
+  "email": "john@example.com"
+}
