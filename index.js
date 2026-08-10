@@ -2,11 +2,16 @@ http = require("http");
 fs = require("fs");
 
 const server = http.createServer((req, res) => {
-
-
   if (req.method === "GET" && req.url === "/users") {
+    const data = JSON.parse(
+    fs.readFileSync("users.json", "utf8")
+);
 
-    res.end(" Got my data " + fs.readFileSync("users.json"));
+res.end(JSON.stringify({
+    username: data.username,
+    empCode: data.empCode
+})) ;
+
   } else if (req.method === "POST" && req.url === "/users") {
     let body = "";
 
@@ -23,7 +28,6 @@ const server = http.createServer((req, res) => {
       res.end("Data received and written to file");
     });
   } else if (req.method === "PUT" && req.url === "/users") {
-
     let body = "";
 
     req.on("data", (chunk) => {
