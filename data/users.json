@@ -1,0 +1,22 @@
+[
+  {
+    "username": "John",
+    "empCode": "EMP101",
+    "email": "john@example.com",
+    "userInfo": {
+      "age": 25,
+      "city": "Ahmedabad",
+      "department": "Development"
+    }
+  },
+  {
+    "username": "POSTED NAME",
+    "empCode": "EMP102",
+    "email": "john@example.com",
+    "userInfo": {
+      "age": 25,
+      "city": "Ahmedabad",
+      "department": "Development"
+    }
+  }
+]
